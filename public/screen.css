@@ -3,6 +3,77 @@ html {
 }
 
 body {
-  margin: 0;
-  font: 16px / 1 sans-serif;
+  /*margin: 0;
+  font: 16px / 1 sans-serif;*/
+  font: 13px helvetica,arial,freesans,clean,sans-serif;
+    line-height: 1.4em;
+    background-color: #fff;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b3b0b0;
+  padding-left: 5px;
+
+}
+h1 {
+  margin-left: 20px;
+}
+header ul{
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  padding-left: 0;
+  flex: 1;
+}
+header li {
+padding-left: 2em;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  width: 446px;
+  height: 446px;
+  margin: 0 9px 0px;
+  font-size: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 3px;
+  border: solid #cacaca;
+  background: #fff;
+  border-width: 1px;
+  margin: 5px;
+
+}
+.item img {
+  display: flex;
+  margin: 10px;
+  height: 424px;
+  width: 424px;
+
+}
+
+@media screen and (max-width: 700px) {
+  .item  {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+  }
+  .item img {
+    height: 200px;
+    width: 200px;
+  }
 }
