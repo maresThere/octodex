@@ -3,36 +3,40 @@ html {
 }
 
 body {
-  /*margin: 0;
-  font: 16px / 1 sans-serif;*/
-  font: 13px helvetica,arial,freesans,clean,sans-serif;
-    line-height: 1.4em;
-    background-color: #fff;
-    color: #333333;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+  line-height: 1.4em;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #b3b0b0;
-  padding-left: 5px;
-
 }
+header img {
+  background-image: url("logo.png");
+}
+
 h1 {
   margin-left: 20px;
 }
-header ul{
+header ul {
+  list-style: none;
   display: flex;
-  list-style-type: none;
-  text-decoration: none;
-  padding-left: 0;
   flex: 1;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 header li {
-padding-left: 2em;
+padding-left: 30px;
+font-weight: bold;
+}
+header li a {
+  text-decoration: none;
 }
 .gallery {
   display: flex;
@@ -42,30 +46,61 @@ padding-left: 2em;
   margin: auto;
 }
 
-.item {
+.bigBox {
   display: flex;
   width: 446px;
-  height: 446px;
-  margin: 0 9px 0px;
-  font-size: 12px;
-  flex-direction: row;
+  margin: 10px 9px 0px;
   flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 3px;
-  border: solid #cacaca;
+  justify-content: space-between;
   background: #fff;
-  border-width: 1px;
-  margin: 5px;
-
+  /*padding: 10px;*/
 }
-.item img {
+.bigBox img {
   display: flex;
   margin: 10px;
   height: 424px;
   width: 424px;
-
 }
 
+.image {
+  border-radius: 3px;
+  border: 1px solid #cacaca;
+}
+.bigBox span {
+  margin: 5px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.byline {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+.byline span {
+  margin: 2px;
+}
+
+span {
+  color: rgb(102, 102, 102);
+}
+
+span.name {
+ color: rgb(50, 50, 50);
+}
+
+.square {
+  height: 30px;
+  width: 30px;
+  background-color: pink;
+  border-radius: 3px;
+}
 @media screen and (max-width: 700px) {
   .item  {
     height: 200px;
