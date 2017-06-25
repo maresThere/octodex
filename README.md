@@ -1,6 +1,6 @@
 # 
 <h1 align="center">Octodex</h1>
 <div align="center">
-<img src="https://github.com/maresThere/memoryGame/blob/master/src/images/Kapture%202017-05-10%20at%2017.48.38.gif" height="400" width="400"/>
+<img src="https://github.com/maresThere/octodex/blob/master/public/images/octocat.jpg"/>
 </div>
 <p align="center">Working with Flexbox.</p>
